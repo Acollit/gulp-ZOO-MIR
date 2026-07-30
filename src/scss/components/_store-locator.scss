@@ -1,0 +1,211 @@
+.store-locator {
+  padding: fluid(80) 0 fluid(100);
+}
+
+.store-locator__map {
+  position: relative;
+  margin-top: fluid(87);
+  border-radius: fluid(30);
+  aspect-ratio: 1216 / 539;
+}
+
+.store-locator__search {
+  position: absolute;
+  left: fluid(20);
+  top: fluid(20);
+  display: flex;
+  gap: fluid(10);
+}
+
+.store-locator__input {
+  border: 1px solid #eef0f3;
+  border-radius: fluid(10);
+  padding: fluid(10);
+  width: fluid(284);
+  font-family: var(--font-family);
+  font-size: fluid(16);
+  color: var(--color-navy);
+  background-color: var(--color-white);
+
+  &::placeholder {
+    color: #7d8798;
+  }
+}
+
+.store-locator__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: fluid(10);
+  padding: fluid(10);
+  width: fluid(135);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: fluid(16);
+  color: var(--color-white);
+  background-color: var(--color-accent);
+}
+
+.store-locator__columns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: fluid(65);
+  gap: fluid(40);
+}
+
+.store-locator__column {
+  width: fluid(527);
+}
+
+.store-locator__column-title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: fluid(16);
+  line-height: 0.92;
+  color: var(--color-navy);
+}
+
+.store-locator__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: fluid(20);
+  gap: fluid(10);
+}
+
+.store-locator__item {
+  display: flex;
+  align-items: center;
+  gap: fluid(10);
+}
+
+.store-locator__dot {
+  flex-shrink: 0;
+  border-radius: 50%;
+  width: fluid(8);
+  height: fluid(8);
+  background-color: var(--color-accent);
+}
+
+.store-locator__address {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: fluid(16);
+  text-decoration: underline;
+  color: rgba(30 58 92 / 66%);
+}
+
+.marketplaces {
+  padding: fluid(100) 0;
+  background-color: var(--color-navy);
+}
+
+.marketplaces__grid {
+  display: flex;
+  justify-content: center;
+  margin-top: fluid(87);
+  gap: fluid(30);
+}
+
+.marketplaces__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: fluid(15);
+  padding: fluid(20);
+  width: fluid(178);
+  background-color: var(--color-white);
+}
+
+.marketplaces__logo {
+  width: fluid(138);
+  height: fluid(138);
+}
+
+.marketplaces__name {
+  margin: fluid(15) 0 0;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: fluid(20);
+  color: var(--color-accent);
+}
+
+.partners {
+  padding: fluid(100) 0;
+  background-color: var(--color-bg-section);
+}
+
+.partners__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: fluid(87);
+  gap: fluid(30);
+}
+
+.partners__more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: fluid(60) auto 0;
+  border-radius: fluid(58);
+  padding: 0 fluid(28);
+  width: fit-content;
+  height: fluid(51);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: fluid(16);
+  color: var(--color-white);
+  background-color: var(--color-accent);
+}
+
+.partner-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: fluid(15);
+  background-color: var(--color-white);
+}
+
+.partner-card__img {
+  aspect-ratio: 1;
+}
+
+.partner-card__category {
+  margin: fluid(20) fluid(15) 0;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: fluid(12);
+  color: var(--color-accent);
+}
+
+.partner-card__name {
+  margin: fluid(2) fluid(15) 0;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: fluid(16);
+  line-height: 0.92;
+  color: var(--color-navy);
+}
+
+.partner-card__address {
+  margin: fluid(8) fluid(15) 0;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: fluid(13);
+  line-height: 1.13;
+  color: var(--color-text-muted);
+}
+
+.partner-card__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: fluid(20) fluid(15) fluid(15);
+  border-radius: fluid(47);
+  height: fluid(36);
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: fluid(14);
+  color: var(--color-white);
+  background-color: var(--color-navy);
+}
