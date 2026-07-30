@@ -1,0 +1,46 @@
+.loyalty {
+  padding: fluid(100) 0;
+  background-color: var(--color-navy-brand);
+}
+
+.loyalty__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: fluid(69);
+  gap: fluid(30);
+}
+
+.loyalty__card {
+  border: 1px solid var(--color-border);
+  border-radius: fluid(20);
+  padding: fluid(19);
+  height: fluid(132);
+  background-color: var(--color-white);
+}
+
+.loyalty__tier {
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: fluid(13);
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.loyalty__title {
+  margin: fluid(11) 0 0;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: fluid(16);
+  line-height: 1.15;
+  color: var(--color-navy);
+}
+
+.loyalty__desc {
+  margin: fluid(9) 0 0;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: fluid(15);
+  line-height: 1.13;
+  color: #7f8fa2;
+}
