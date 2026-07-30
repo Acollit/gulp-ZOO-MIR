@@ -1,0 +1,67 @@
+<section class="auth-page">
+  <div class="container">
+    <p class="breadcrumb">Главная · Личный кабинет</p>
+
+    <p class="auth-page__eyebrow">Личный кабинет</p>
+    <h1 class="auth-page__title">Регистрация</h1>
+
+    <div class="auth-page__tabs">
+      <label class="auth-page__tab">
+        <input class="auth-page__tab-radio" type="radio" name="client-type" checked>
+        Розничный клиент
+      </label>
+      <label class="auth-page__tab">
+        <input class="auth-page__tab-radio" type="radio" name="client-type">
+        Оптовый клиент
+      </label>
+    </div>
+
+    <form class="auth-page__form">
+      <label class="auth-page__field">
+        <span class="auth-page__label">Имя</span>
+        <input class="auth-page__input" type="text" placeholder="Андрей">
+      </label>
+      <label class="auth-page__field">
+        <span class="auth-page__label">Телефон</span>
+        <input class="auth-page__input" type="tel" placeholder="+7 (XXX) XXX-XX-XX">
+      </label>
+      <label class="auth-page__field">
+        <span class="auth-page__label">Почта</span>
+        <input class="auth-page__input" type="email" placeholder="nigrohub@mail.ru">
+      </label>
+
+      <button class="auth-page__submit" type="submit">Получить код</button>
+    </form>
+
+    <p class="auth-page__hint">
+      <span class="auth-page__hint-muted">Уже есть аккаунт?</span>
+      <a href="login.html">Войти</a>
+    </p>
+    <p class="auth-page__support">
+      Не получается зарегистрироваться? Напишите нам на почту:
+      <a class="auth-page__support-email" href="mailto:pki.zoo-mir@yandex.ru">pki.zoo-mir@yandex.ru</a>
+    </p>
+  </div>
+</section>
+
+<div class="modal" id="modal-register-success" hidden>
+  <div class="modal__box">
+    <span class="modal__icon icon-placeholder">
+      <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+    </span>
+    <h2 class="modal__title">Регистрация завершена</h2>
+    <p class="modal__text">Добро пожаловать! Теперь вам доступен личный кабинет.</p>
+    <a class="modal__btn" href="profile.html">В личный кабинет</a>
+  </div>
+</div>
+
+<div class="modal" id="modal-register-fail" hidden>
+  <div class="modal__box">
+    <span class="modal__icon icon-placeholder">
+      <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+    </span>
+    <h2 class="modal__title">Не удалось зарегистрироваться</h2>
+    <p class="modal__text">Проверьте введённые данные и попробуйте снова.</p>
+    <button class="modal__btn" type="button">Попробовать снова</button>
+  </div>
+</div>

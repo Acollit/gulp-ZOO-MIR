@@ -1,0 +1,74 @@
+<section class="auth-page">
+  <div class="container">
+    <p class="breadcrumb">Главная · Личный кабинет</p>
+
+    <p class="auth-page__eyebrow">Личный кабинет</p>
+    <h1 class="auth-page__title">Вход</h1>
+
+    <div class="auth-page__tabs">
+      <label class="auth-page__tab">
+        <input class="auth-page__tab-radio" type="radio" name="client-type" checked>
+        Розничный клиент
+      </label>
+      <label class="auth-page__tab">
+        <input class="auth-page__tab-radio" type="radio" name="client-type">
+        Оптовый клиент
+      </label>
+    </div>
+
+    <form class="auth-page__form">
+      <label class="auth-page__field">
+        <span class="auth-page__label">Телефон</span>
+        <input class="auth-page__input" type="tel" placeholder="+7 (XXX) XXX-XX-XX">
+      </label>
+
+      <button class="auth-page__submit" type="submit">Получить код</button>
+    </form>
+
+    <p class="auth-page__hint">
+      <span class="auth-page__hint-muted">Еще нет аккаунта?</span>
+      <a href="register.html">Зарегистрируйся</a>
+    </p>
+    <p class="auth-page__support">
+      Не получается войти? Напишите нам на почту:
+      <a class="auth-page__support-email" href="mailto:pki.zoo-mir@yandex.ru">pki.zoo-mir@yandex.ru</a>
+    </p>
+  </div>
+</section>
+
+<div class="modal" id="modal-code" hidden>
+  <div class="modal__box">
+    <span class="modal__icon icon-placeholder">
+      <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+    </span>
+    <h2 class="modal__title">Введите код из SMS</h2>
+    <p class="modal__text">Мы отправили 4-значный код на указанный номер телефона.</p>
+    <label class="auth-page__field">
+      <span class="visually-hidden">Код из SMS</span>
+      <input class="auth-page__input" type="text" inputmode="numeric" placeholder="0000">
+    </label>
+    <button class="modal__btn" type="button">Подтвердить</button>
+  </div>
+</div>
+
+<div class="modal" id="modal-login-success" hidden>
+  <div class="modal__box">
+    <span class="modal__icon icon-placeholder">
+      <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+    </span>
+    <h2 class="modal__title">Вы успешно вошли</h2>
+    <p class="modal__text">Переходим в личный кабинет.</p>
+    <a class="modal__btn" href="profile.html">В личный кабинет</a>
+  </div>
+</div>
+
+<div class="modal" id="modal-login-fail" hidden>
+  <div class="modal__box">
+    <span class="modal__icon icon-placeholder">
+      <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+    </span>
+    <h2 class="modal__title">Неверный код</h2>
+    <p class="modal__text">Проверьте код из SMS и попробуйте снова.</p>
+    <button class="modal__btn" type="button">Попробовать снова</button>
+  </div>
+</div>
