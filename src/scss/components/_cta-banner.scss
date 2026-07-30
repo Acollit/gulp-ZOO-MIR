@@ -1,0 +1,40 @@
+.cta-banner {
+  padding: fluid(100) 0;
+  text-align: center;
+  background-color: var(--color-navy);
+}
+
+.cta-banner__title {
+  margin: 0 auto;
+  max-width: fluid(1085);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: fluid(40);
+  line-height: 0.92;
+  color: var(--color-white);
+}
+
+.cta-banner__text {
+  margin: fluid(22) 0 0;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: fluid(17);
+  color: rgba(255 255 255 / 66%);
+}
+
+.cta-banner__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: fluid(35);
+  border-radius: fluid(58);
+  padding: 0 fluid(28);
+  height: fluid(56);
+  box-shadow: 0 fluid(4) fluid(10) rgba(242 140 56 / 48%);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: fluid(17);
+  white-space: nowrap;
+  color: var(--color-white);
+  background-color: var(--color-accent);
+}
