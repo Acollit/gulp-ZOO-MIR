@@ -1,0 +1,126 @@
+.orders-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: fluid(-8);
+  gap: fluid(10);
+}
+
+.orders-toolbar__label {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: fluid(15);
+  color: #78899d;
+}
+
+.orders-toolbar__value {
+  display: flex;
+  align-items: center;
+  border: 1px solid #eef0f3;
+  border-radius: fluid(10);
+  padding: fluid(8) fluid(10);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: fluid(15);
+  color: var(--color-navy);
+  background-color: var(--color-white);
+  gap: fluid(10);
+
+  svg {
+    width: fluid(12);
+    height: fluid(13);
+  }
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: fluid(20);
+  gap: fluid(15);
+}
+
+.order-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 1px solid #eef0f3;
+  border-radius: fluid(10);
+  padding: fluid(19);
+  gap: fluid(20);
+}
+
+.order-card__main {
+  max-width: fluid(380);
+}
+
+.order-card__status {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: fluid(16);
+  color: var(--color-navy);
+}
+
+.order-card__number {
+  display: flex;
+  align-items: center;
+  margin-top: fluid(25);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: fluid(14);
+  color: #78909c;
+  gap: fluid(5);
+
+  svg {
+    width: fluid(14);
+    height: fluid(14);
+  }
+}
+
+.order-card__delivery {
+  margin: fluid(6) 0 0;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: fluid(18);
+  color: var(--color-navy);
+}
+
+.order-card__address {
+  margin: fluid(18) 0 0;
+  font-family: var(--font-family);
+  font-size: fluid(14);
+  color: var(--color-navy);
+}
+
+.order-card__details {
+  margin: fluid(4) 0 0;
+  font-family: var(--font-family);
+  font-size: fluid(14);
+  color: rgba(30 58 92 / 60%);
+}
+
+.order-card__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: fluid(10);
+}
+
+.order-card__item {
+  display: flex;
+  flex-direction: column;
+  width: fluid(104);
+  gap: fluid(5);
+}
+
+.order-card__item-img {
+  border-radius: fluid(10);
+  aspect-ratio: 1;
+}
+
+.order-card__item-price {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: fluid(12);
+  color: var(--color-navy);
+}
