@@ -1,0 +1,46 @@
+.page-banner {
+  padding: fluid(60) 0 fluid(70);
+  background-color: var(--color-navy);
+}
+
+.page-banner__breadcrumb {
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: fluid(14);
+  color: rgba(255 255 255 / 60%);
+}
+
+.page-banner__title {
+  margin: fluid(48) 0 0;
+  max-width: fluid(839);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: fluid(48);
+  line-height: 0.97;
+  color: var(--color-white);
+}
+
+.page-banner__desc {
+  margin: fluid(64) 0 0;
+  max-width: fluid(647);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: fluid(17);
+  color: rgba(255 255 255 / 60%);
+}
+
+.page-banner__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: fluid(64);
+  border-radius: fluid(45);
+  padding: 0 fluid(24);
+  height: fluid(48);
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: fluid(16);
+  color: var(--color-white);
+  background-color: var(--color-accent-dark);
+}

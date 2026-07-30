@@ -1,0 +1,106 @@
+.catalog-filters {
+  padding: fluid(60) 0 fluid(50);
+}
+
+.catalog-filters__categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: fluid(10);
+}
+
+.catalog-filters__category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eef0f3;
+  border-radius: fluid(52);
+  padding: fluid(10) fluid(20);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: fluid(15);
+  color: var(--color-navy);
+  background-color: var(--color-white);
+  gap: fluid(10);
+
+  &--active {
+    border-color: var(--color-navy);
+    color: var(--color-white);
+    background-color: var(--color-navy);
+  }
+}
+
+.catalog-filters__count {
+  color: rgba(30 58 92 / 60%);
+}
+
+.catalog-filters__category--active .catalog-filters__count {
+  color: rgba(255 255 255 / 81%);
+}
+
+.catalog-filters__divider {
+  margin: fluid(28) 0;
+  border: none;
+  border-top: 1px solid #eef0f3;
+}
+
+.catalog-filters__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: fluid(20);
+}
+
+.catalog-filters__dropdowns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: fluid(10);
+}
+
+.catalog-filters__dropdown,
+.catalog-filters__sort-value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eef0f3;
+  border-radius: fluid(10);
+  padding: fluid(8) fluid(10);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: fluid(15);
+  color: var(--color-navy);
+  background-color: var(--color-white);
+  gap: fluid(10);
+
+  svg {
+    width: fluid(12);
+    height: fluid(13);
+    color: var(--color-navy);
+  }
+}
+
+.catalog-filters__sort {
+  display: flex;
+  align-items: center;
+  gap: fluid(10);
+}
+
+.catalog-filters__sort-label {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: fluid(15);
+  color: #78899d;
+}
+
+.catalog-filters__found {
+  margin: fluid(20) 0 0;
+  font-family: var(--font-family);
+  font-size: fluid(15);
+  text-align: right;
+  color: #78899d;
+
+  strong {
+    font-weight: 700;
+    color: var(--color-navy);
+  }
+}
