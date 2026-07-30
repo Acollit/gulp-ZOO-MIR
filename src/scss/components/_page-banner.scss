@@ -38,6 +38,14 @@
   color: rgba(255 255 255 / 60%);
 }
 
+.page-banner__meta {
+  margin: fluid(124) 0 0;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: fluid(14);
+  color: rgba(255 255 255 / 60%);
+}
+
 .page-banner__title {
   margin: fluid(48) 0 0;
   max-width: fluid(839);

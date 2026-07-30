@@ -1,0 +1,80 @@
+.article {
+  padding: fluid(60) 0 fluid(90);
+}
+
+.article__inner {
+  margin: 0 auto;
+  max-width: fluid(800);
+}
+
+.article__img {
+  display: block;
+  border-radius: fluid(30);
+  width: 100%;
+  aspect-ratio: 800 / 396;
+}
+
+.article__title {
+  margin: fluid(35) 0 0;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: fluid(32);
+  line-height: 1.15;
+  color: var(--color-navy);
+}
+
+.article__body {
+  margin: fluid(30) 0 0;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: fluid(16);
+  line-height: 1.13;
+  color: rgba(30 58 92 / 71%);
+}
+
+.article__quote {
+  position: relative;
+  margin: fluid(30) 0 0;
+  padding: fluid(20) fluid(20) fluid(20) fluid(25);
+  background-color: var(--color-bg-section);
+}
+
+.article__quote::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: fluid(5);
+  height: 100%;
+  background-color: var(--color-accent);
+}
+
+.article__quote-text {
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: fluid(16);
+  line-height: 1.13;
+  color: var(--color-navy);
+}
+
+.article__quote-author {
+  margin: fluid(15) 0 0;
+  font-family: var(--font-family);
+  font-size: fluid(14);
+  color: rgba(30 58 92 / 50%);
+}
+
+.article__back-link {
+  display: inline-block;
+  margin-top: fluid(30);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: fluid(14);
+  color: var(--color-accent);
+}
+
+.article-related {
+  padding: fluid(100) 0;
+  background-color: var(--color-bg-section);
+}
