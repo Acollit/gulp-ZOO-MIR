@@ -1,0 +1,35 @@
+.distribution {
+  padding: fluid(100) 0;
+  background-color: var(--color-navy);
+}
+
+.distribution__stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: fluid(69);
+  gap: fluid(45);
+}
+
+.distribution__stats-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fluid(238);
+  gap: fluid(10);
+}
+
+.distribution__stats-value {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: fluid(54);
+  line-height: 0.92;
+  color: var(--color-accent);
+}
+
+.distribution__stats-label {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: fluid(15);
+  color: rgba(255 255 255 / 76%);
+}

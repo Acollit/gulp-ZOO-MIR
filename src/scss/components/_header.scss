@@ -1,1 +1,80 @@
-// ваш код
+.header {
+  position: relative;
+  z-index: 10;
+  background-color: var(--color-white);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: fluid(83);
+}
+
+.header__brand-nav {
+  display: flex;
+  align-items: center;
+  gap: fluid(30);
+}
+
+.header__logo {
+  display: block;
+}
+
+.header__logo-img {
+  border-radius: fluid(12);
+  width: fluid(80);
+  height: fluid(62);
+}
+
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  gap: fluid(20);
+}
+
+.header__nav-link {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: fluid(15);
+  white-space: nowrap;
+  color: var(--color-text);
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: fluid(24);
+}
+
+.header__contacts {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: fluid(15);
+  white-space: nowrap;
+  color: var(--color-text);
+}
+
+.header__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: fluid(45);
+  padding: 0 fluid(20);
+  height: fluid(37);
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: fluid(15);
+  white-space: nowrap;
+  color: var(--color-white);
+  background-color: var(--color-accent-dark);
+  gap: fluid(4);
+}
+
+.header__cta-dot {
+  flex-shrink: 0;
+  border-radius: 50%;
+  width: fluid(9);
+  height: fluid(9);
+  background-color: var(--color-white);
+}

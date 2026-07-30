@@ -1,0 +1,11 @@
+/* stylelint-disable */
+@use "sass:math";
+
+// резиновый (fluid) адаптив: значение линейно масштабируется между $min-vw и $max-vw
+// как единая картинка, а за пределами диапазона остаётся зафиксированным
+@function fluid($px, $min-vw: 1280, $max-vw: 1920) {
+  $min-px: math.div($px * $min-vw, $max-vw);
+  $vw: math.div($px, $max-vw) * 100;
+
+  @return clamp(#{$min-px}px, #{$vw}vw, #{$px}px);
+}

@@ -1,0 +1,41 @@
+.section-header {
+  text-align: center;
+}
+
+.section-header__eyebrow {
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: fluid(13);
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.section-header__title {
+  margin: fluid(20) 0 0;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: fluid(40);
+  line-height: 0.92;
+  color: var(--color-navy);
+}
+
+.section-header__subtitle {
+  margin: fluid(25) auto 0;
+  max-width: fluid(551);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: fluid(17);
+  line-height: 1.13;
+  color: rgba(30 58 92 / 66%);
+}
+
+.section-header--light {
+  .section-header__title {
+    color: var(--color-white);
+  }
+
+  .section-header__subtitle {
+    color: rgba(255 255 255 / 66%);
+  }
+}

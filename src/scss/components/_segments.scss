@@ -1,0 +1,112 @@
+.segments {
+  padding: fluid(90) 0;
+}
+
+.segments__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: fluid(70);
+  gap: fluid(30);
+}
+
+.segments__card {
+  border-radius: fluid(20);
+  padding: fluid(30);
+
+  &--econom {
+    border: 1px solid var(--color-border);
+    background-color: var(--color-white);
+
+    .segments__title {
+      color: var(--color-navy);
+    }
+
+    .segments__desc {
+      color: var(--color-text-muted);
+    }
+
+    .segments__tag {
+      color: var(--color-navy);
+      background-color: var(--color-bg-section);
+    }
+  }
+
+  &--premium {
+    background-color: var(--color-navy);
+
+    .segments__title,
+    .segments__desc {
+      color: var(--color-white);
+    }
+
+    .segments__desc {
+      opacity: 0.75;
+    }
+
+    .segments__tag {
+      color: var(--color-white);
+      background-color: #395270;
+    }
+  }
+
+  &--super {
+    background-color: var(--color-accent);
+
+    .segments__tier,
+    .segments__title,
+    .segments__desc {
+      color: var(--color-white);
+    }
+
+    .segments__tag {
+      color: var(--color-accent);
+      background-color: var(--color-white);
+    }
+  }
+}
+
+.segments__tier {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: fluid(15);
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.segments__title {
+  margin: fluid(15) 0 0;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: fluid(25);
+  line-height: 0.92;
+}
+
+.segments__desc {
+  margin: fluid(20) 0 0;
+  max-width: fluid(325);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: fluid(15);
+  line-height: 1.13;
+}
+
+.segments__tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: fluid(25);
+  gap: fluid(6);
+}
+
+.segments__tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: fluid(48);
+  padding: 0 fluid(14);
+  height: fluid(26);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: fluid(13);
+  white-space: nowrap;
+}

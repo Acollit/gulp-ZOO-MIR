@@ -1,0 +1,68 @@
+.quality-section {
+  padding: fluid(70) 0;
+}
+
+.quality {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: fluid(20);
+  padding: fluid(50);
+  background-color: var(--color-bg-section);
+  gap: fluid(40);
+}
+
+.quality__info {
+  max-width: fluid(447);
+}
+
+.quality__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: fluid(32);
+  line-height: 0.92;
+  color: var(--color-navy);
+}
+
+.quality__text {
+  margin: fluid(25) 0 0;
+  max-width: fluid(415);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: fluid(16);
+  line-height: 1.13;
+  color: var(--color-text-muted);
+}
+
+.quality__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: fluid(15);
+}
+
+.quality__card {
+  border: 1px solid #e3e8f0;
+  border-radius: fluid(20);
+  padding: fluid(19) fluid(20);
+  width: fluid(282);
+  background-color: var(--color-white);
+}
+
+.quality__card-label {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: fluid(20);
+  line-height: 0.92;
+  color: var(--color-accent-dark);
+}
+
+.quality__card-desc {
+  margin: fluid(13) 0 0;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: fluid(14);
+  line-height: 1.13;
+  color: var(--color-text-muted);
+}

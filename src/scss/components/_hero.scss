@@ -1,0 +1,136 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  height: fluid(877);
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0 0 0 / 78%) 0%, rgba(0 0 0 / 20%) 55%, rgba(0 0 0 / 20%) 100%);
+  }
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 2;
+  padding-top: fluid(133);
+}
+
+.hero__badge {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(255 255 255 / 45%);
+  border-radius: fluid(52);
+  padding: fluid(10) fluid(20);
+  font-family: var(--font-family);
+  font-size: fluid(16);
+  color: var(--color-white);
+  background-color: rgba(255 255 255 / 10%);
+  backdrop-filter: blur(fluid(5));
+  gap: fluid(10);
+}
+
+.hero__badge-dot {
+  flex-shrink: 0;
+  border-radius: 50%;
+  width: fluid(9);
+  height: fluid(9);
+  background-color: var(--color-accent);
+}
+
+.hero__title {
+  margin: fluid(50) 0 0;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: fluid(72);
+  line-height: 0.74;
+  color: var(--color-white);
+}
+
+.hero__title-line {
+  display: block;
+
+  &--accent {
+    color: var(--color-accent);
+  }
+}
+
+.hero__subtitle {
+  margin: fluid(40) 0 0;
+  max-width: fluid(582);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: fluid(22);
+  line-height: 1.15;
+  color: rgba(255 255 255 / 90%);
+}
+
+.hero__actions {
+  display: flex;
+  align-items: center;
+  margin-top: fluid(50);
+  gap: fluid(15);
+}
+
+.hero__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: fluid(58);
+  padding: 0 fluid(28);
+  height: fluid(56);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: fluid(17);
+  white-space: nowrap;
+
+  &--primary {
+    box-shadow: 0 fluid(4) fluid(10) rgba(242 140 56 / 48%);
+    color: var(--color-white);
+    background-color: var(--color-accent);
+  }
+
+  &--ghost {
+    border: 1px solid rgba(255 255 255 / 45%);
+    color: var(--color-white);
+    background-color: rgba(255 255 255 / 10%);
+    backdrop-filter: blur(fluid(7.5));
+  }
+}
+
+.hero__stats {
+  display: flex;
+  margin-top: fluid(60);
+  gap: fluid(60);
+}
+
+.hero__stats-item {
+  display: flex;
+  flex-direction: column;
+  gap: fluid(10);
+}
+
+.hero__stats-value {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: fluid(32);
+  line-height: 0.92;
+  color: var(--color-white);
+}
+
+.hero__stats-label {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: fluid(14);
+  line-height: 1.13;
+  color: rgba(255 255 255 / 69%);
+}

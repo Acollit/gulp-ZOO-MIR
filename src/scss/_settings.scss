@@ -77,12 +77,30 @@ a {
 
 .container {
   margin: 0 auto;
-  padding: 0 var(--container-offset);
-  max-width: var(--container-width);
+  width: fluid(1216);
 }
 
 .centered {
   text-align: center;
+}
+
+.img-placeholder {
+  display: block;
+  background-color: var(--color-placeholder);
+}
+
+.icon-placeholder {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+
+  svg {
+    display: block;
+    width: 55%;
+    height: 55%;
+  }
 }
 
 .dis-scroll {

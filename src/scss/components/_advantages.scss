@@ -1,0 +1,43 @@
+.advantages {
+  padding: fluid(30) 0;
+  background-color: var(--color-bg-light);
+}
+
+.advantages__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: fluid(20);
+}
+
+.advantages__item {
+  display: flex;
+  align-items: center;
+  gap: fluid(10);
+}
+
+.advantages__icon {
+  flex-shrink: 0;
+  border-radius: 50%;
+  width: fluid(48);
+  height: fluid(48);
+  box-shadow: 0 0 fluid(17) fluid(-4) rgba(0 0 0 / 25%);
+  background-color: var(--color-white);
+
+  &--number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: fluid(22);
+    color: var(--color-accent);
+  }
+}
+
+.advantages__text {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: fluid(16);
+  color: var(--color-navy-alt);
+}

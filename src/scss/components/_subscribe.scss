@@ -1,0 +1,109 @@
+.subscribe-section {
+  padding: fluid(70) 0 fluid(100);
+}
+
+.subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: fluid(30);
+  padding: fluid(60);
+  background-color: var(--color-navy);
+  gap: fluid(40);
+}
+
+.subscribe__info {
+  max-width: fluid(518);
+}
+
+.subscribe__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: fluid(34);
+  line-height: 1.09;
+  color: var(--color-white);
+}
+
+.subscribe__text {
+  margin: fluid(20) 0 0;
+  max-width: fluid(543);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: fluid(17);
+  color: rgba(255 255 255 / 68%);
+}
+
+.subscribe__form {
+  flex-shrink: 0;
+  width: fluid(533);
+}
+
+.subscribe__row {
+  display: flex;
+  gap: fluid(10);
+}
+
+.subscribe__field {
+  flex: 1;
+  min-width: 0;
+}
+
+.subscribe__input {
+  border: 1px solid var(--color-border);
+  border-radius: fluid(37);
+  padding: 0 fluid(16);
+  width: 100%;
+  height: fluid(57);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: fluid(15);
+  color: var(--color-white);
+  background-color: rgba(255 255 255 / 10%);
+
+  &::placeholder {
+    color: rgba(255 255 255 / 68%);
+  }
+}
+
+.subscribe__submit {
+  flex-shrink: 0;
+  border-radius: fluid(58);
+  width: fluid(150);
+  height: fluid(57);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: fluid(15);
+  color: var(--color-white);
+  background-color: var(--color-accent);
+}
+
+.subscribe__check {
+  display: flex;
+  align-items: flex-start;
+  margin-top: fluid(15);
+  cursor: pointer;
+  gap: fluid(10);
+}
+
+.subscribe__checkbox {
+  flex-shrink: 0;
+  margin: 0;
+  border: 1px solid var(--color-border);
+  border-radius: fluid(5);
+  width: fluid(18);
+  height: fluid(18);
+  accent-color: var(--color-accent);
+}
+
+.subscribe__check-text {
+  font-family: var(--font-family);
+  font-size: fluid(14);
+  line-height: 1.02;
+  color: #bec6d0;
+}
+
+.subscribe__check-accent {
+  font-weight: 600;
+  color: var(--color-white);
+}
