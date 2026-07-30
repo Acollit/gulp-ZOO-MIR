@@ -1,6 +1,33 @@
 .page-banner {
+  position: relative;
+  overflow: hidden;
   padding: fluid(60) 0 fluid(70);
   background-color: var(--color-navy);
+
+  &--image {
+    background-color: var(--color-navy-brand);
+  }
+}
+
+.page-banner__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.page-banner__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.page-banner__eyebrow {
+  margin: fluid(29) 0 0;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: fluid(13);
+  text-transform: uppercase;
+  color: var(--color-accent);
 }
 
 .page-banner__breadcrumb {
@@ -28,6 +55,10 @@
   font-weight: 500;
   font-size: fluid(17);
   color: rgba(255 255 255 / 60%);
+
+  &--wide {
+    max-width: fluid(774);
+  }
 }
 
 .page-banner__btn {
