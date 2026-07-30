@@ -41,6 +41,11 @@
     height: fluid(25);
     color: var(--color-accent);
   }
+
+  &--active svg {
+    color: var(--color-accent);
+    fill: var(--color-accent);
+  }
 }
 
 .product-card__segment {
