@@ -1,0 +1,146 @@
+<section class="account-section">
+  <div class="container">
+    <div class="account-layout">
+      <aside class="account-sidebar">
+        <nav>
+          <ul class="list-reset">
+            <li>
+              <a class="account-nav__item" href="profile.html">
+                <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                Профиль
+              </a>
+            </li>
+            <li>
+              <a class="account-nav__item" href="orders.html">
+                <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                История заказов
+              </a>
+            </li>
+            <li>
+              <a class="account-nav__item" href="favorites.html">
+                <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                Избранное
+              </a>
+            </li>
+            <li>
+              <a class="account-nav__item" href="repeat-orders.html">
+                <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                Повторные заказы
+              </a>
+            </li>
+            <li>
+              <a class="account-nav__item" href="bonus.html">
+                <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                Бонусная программа
+              </a>
+            </li>
+            <li class="account-nav__group">
+              <div class="account-nav__group-header">
+                <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                Кабинет партнёра
+              </div>
+              <a class="account-nav__subitem" href="quick-order.html">
+                <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                Быстрый заказ
+              </a>
+              <a class="account-nav__subitem" href="wholesale-orders.html">
+                <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                Оптовые заказы
+              </a>
+              <a class="account-nav__subitem" href="partner-documents.html">
+                <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                Документы
+              </a>
+              <a class="account-nav__subitem account-nav__subitem--active" href="partner-settings.html">
+                <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                Настройки
+              </a>
+            </li>
+            <li>
+              <a class="account-nav__item account-nav__item--danger" href="index.html">
+                <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                Выйти
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <div class="account-content">
+        <div class="account-columns">
+          <div>
+            <h2 class="account-content__title">Мои реквизиты</h2>
+            <form class="account-form">
+              <label class="account-form__field">
+                <span class="account-form__label">Название организации</span>
+                <input class="account-form__input" type="text" value="ООО «Ветроплюх»">
+              </label>
+              <label class="account-form__field">
+                <span class="account-form__label">ИНН</span>
+                <input class="account-form__input" type="text" value="9739252058393">
+              </label>
+              <label class="account-form__field">
+                <span class="account-form__label">КПП</span>
+                <input class="account-form__input" type="text" value="9739252058393">
+              </label>
+              <label class="account-form__field">
+                <span class="account-form__label">Адрес</span>
+                <input class="account-form__input" type="text" value="Москва, Промышленный переулок 76">
+              </label>
+
+              <button class="account-form__submit" type="submit">Сохранить изменения</button>
+            </form>
+          </div>
+
+          <div>
+            <h2 class="account-content__title">Контакты</h2>
+            <form class="account-form">
+              <label class="account-form__field">
+                <span class="account-form__label">Контактное лицо</span>
+                <input class="account-form__input" type="text" value="Валентин Валентинович">
+              </label>
+              <label class="account-form__field">
+                <span class="account-form__label">Телефон</span>
+                <input class="account-form__input" type="tel" value="+7 (999) 999-99-99">
+              </label>
+              <label class="account-form__field">
+                <span class="account-form__label">E-mail</span>
+                <input class="account-form__input" type="email" value="pki.zoo-mir@yandex.ru">
+              </label>
+
+              <button class="account-form__submit" type="submit">Сохранить изменения</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="account-subsection">
+          <h2 class="account-content__title account-content__title--sm">Адреса доставки</h2>
+
+          <ul class="address-list list-reset">
+            <li class="address-card address-card--active">
+              <h3 class="address-card__title">Пункт выдачи</h3>
+              <p class="address-card__location">Москва, Бульвар Энгельса 47</p>
+              <p class="address-card__meta">кв./офис 54, подъезд 2, домофон 54, этаж 7</p>
+              <p class="address-card__meta">Срок хранения — 14 дней</p>
+              <button type="button" class="address-card__menu icon-placeholder" aria-label="Действия с адресом">
+                <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+              </button>
+            </li>
+            <li class="address-card">
+              <h3 class="address-card__title">Доставка по адресу</h3>
+              <p class="address-card__location">Москва, Бульвар Энгельса 47</p>
+              <p class="address-card__meta">кв./офис 54, подъезд 2, домофон 54, этаж 7</p>
+              <p class="address-card__meta">Андрей, +7 (999) 999-99-99</p>
+              <button type="button" class="address-card__menu icon-placeholder" aria-label="Действия с адресом">
+                <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+              </button>
+            </li>
+            <li>
+              <a class="address-card__view-all" href="addresses.html">Смотреть все</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
