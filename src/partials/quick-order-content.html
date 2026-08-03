@@ -1,0 +1,286 @@
+<section class="account-section">
+  <div class="container">
+    <div class="account-layout">
+      <aside class="account-sidebar">
+        <nav>
+          <ul class="list-reset">
+            <li>
+              <a class="account-nav__item" href="profile.html">
+                <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                Профиль
+              </a>
+            </li>
+            <li>
+              <a class="account-nav__item" href="orders.html">
+                <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                История заказов
+              </a>
+            </li>
+            <li>
+              <a class="account-nav__item" href="favorites.html">
+                <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                Избранное
+              </a>
+            </li>
+            <li>
+              <a class="account-nav__item" href="repeat-orders.html">
+                <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                Повторные заказы
+              </a>
+            </li>
+            <li>
+              <a class="account-nav__item" href="bonus.html">
+                <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                Бонусная программа
+              </a>
+            </li>
+            <li class="account-nav__group">
+              <div class="account-nav__group-header">
+                <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                Кабинет партнёра
+              </div>
+              <a class="account-nav__subitem account-nav__subitem--active" href="quick-order.html">
+                <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                Быстрый заказ
+              </a>
+              <a class="account-nav__subitem" href="wholesale-orders.html">
+                <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                Оптовые заказы
+              </a>
+              <a class="account-nav__subitem" href="partner-documents.html">
+                <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                Документы
+              </a>
+              <a class="account-nav__subitem" href="partner-settings.html">
+                <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                Настройки
+              </a>
+            </li>
+            <li>
+              <a class="account-nav__item account-nav__item--danger" href="index.html">
+                <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                Выйти
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <div class="account-content">
+        <h2 class="account-content__title">Быстрый заказ</h2>
+
+        <div class="quick-order-toolbar">
+          <label class="quick-order-toolbar__search">
+            <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+            <input type="text" placeholder="Поиск по товарам">
+          </label>
+          <button type="button" class="quick-order-toolbar__csv">Загрузить из CSV</button>
+        </div>
+
+        <div class="quick-order-filters">
+          <button type="button" class="quick-order-filters__item">
+            Для всех
+            <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+          </button>
+          <button type="button" class="quick-order-filters__item">
+            Тип корма
+            <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+          </button>
+          <button type="button" class="quick-order-filters__item">
+            Возраст
+            <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+          </button>
+          <button type="button" class="quick-order-filters__item">
+            Назначение
+            <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+          </button>
+          <button type="button" class="quick-order-filters__item">
+            Вкус
+            <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+          </button>
+          <button type="button" class="quick-order-filters__item">
+            Бренд
+            <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+          </button>
+          <button type="button" class="quick-order-filters__item">
+            Все упаковки
+            <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+          </button>
+          <button type="button" class="quick-order-filters__item">
+            Сегмент
+            <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+          </button>
+        </div>
+
+        <p class="quick-order-found">Найдено: <strong>28</strong></p>
+
+        <div class="quick-order-table">
+          <div class="quick-order-table__head">
+            <span class="quick-order-row__sku">SKU</span>
+            <span class="quick-order-row__img">Фото</span>
+            <span class="quick-order-row__name">Название</span>
+            <span class="quick-order-row__price">Цена</span>
+            <span class="quick-order-row__stock">Остаток</span>
+            <span class="quick-order-row__qty-head">Количество</span>
+            <span class="quick-order-row__total">Итого</span>
+          </div>
+
+          <ul class="quick-order-table__body list-reset">
+            <li class="quick-order-row">
+              <input type="checkbox" class="quick-order-row__checkbox">
+              <div class="quick-order-row__cells">
+                <span class="quick-order-row__sku">
+                  123568975
+                  <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                </span>
+                <span class="quick-order-row__img img-placeholder"></span>
+                <p class="quick-order-row__name">CONSERVES MIX, говядина</p>
+                <p class="quick-order-row__price">5 000 ₽</p>
+                <p class="quick-order-row__stock">154</p>
+                <div class="qty-stepper">
+                  <button type="button" class="qty-stepper__btn">–</button>
+                  <span class="qty-stepper__value">1</span>
+                  <button type="button" class="qty-stepper__btn">+</button>
+                </div>
+                <p class="quick-order-row__total">5 000 ₽</p>
+              </div>
+            </li>
+            <li class="quick-order-row">
+              <input type="checkbox" class="quick-order-row__checkbox">
+              <div class="quick-order-row__cells">
+                <span class="quick-order-row__sku">
+                  123568976
+                  <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                </span>
+                <span class="quick-order-row__img img-placeholder"></span>
+                <p class="quick-order-row__name">CONSERVES MIX, курица</p>
+                <p class="quick-order-row__price">4 800 ₽</p>
+                <p class="quick-order-row__stock">98</p>
+                <div class="qty-stepper">
+                  <button type="button" class="qty-stepper__btn">–</button>
+                  <span class="qty-stepper__value">1</span>
+                  <button type="button" class="qty-stepper__btn">+</button>
+                </div>
+                <p class="quick-order-row__total">4 800 ₽</p>
+              </div>
+            </li>
+            <li class="quick-order-row">
+              <input type="checkbox" class="quick-order-row__checkbox">
+              <div class="quick-order-row__cells">
+                <span class="quick-order-row__sku">
+                  123568977
+                  <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                </span>
+                <span class="quick-order-row__img img-placeholder"></span>
+                <p class="quick-order-row__name">GRAIN FREE, индейка</p>
+                <p class="quick-order-row__price">6 200 ₽</p>
+                <p class="quick-order-row__stock">42</p>
+                <div class="qty-stepper">
+                  <button type="button" class="qty-stepper__btn">–</button>
+                  <span class="qty-stepper__value">1</span>
+                  <button type="button" class="qty-stepper__btn">+</button>
+                </div>
+                <p class="quick-order-row__total">6 200 ₽</p>
+              </div>
+            </li>
+            <li class="quick-order-row">
+              <input type="checkbox" class="quick-order-row__checkbox">
+              <div class="quick-order-row__cells">
+                <span class="quick-order-row__sku">
+                  123568978
+                  <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                </span>
+                <span class="quick-order-row__img img-placeholder"></span>
+                <p class="quick-order-row__name">PUPPY MIX, ягнёнок</p>
+                <p class="quick-order-row__price">5 400 ₽</p>
+                <p class="quick-order-row__stock">76</p>
+                <div class="qty-stepper">
+                  <button type="button" class="qty-stepper__btn">–</button>
+                  <span class="qty-stepper__value">1</span>
+                  <button type="button" class="qty-stepper__btn">+</button>
+                </div>
+                <p class="quick-order-row__total">5 400 ₽</p>
+              </div>
+            </li>
+            <li class="quick-order-row">
+              <input type="checkbox" class="quick-order-row__checkbox">
+              <div class="quick-order-row__cells">
+                <span class="quick-order-row__sku">
+                  123568979
+                  <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                </span>
+                <span class="quick-order-row__img img-placeholder"></span>
+                <p class="quick-order-row__name">SENIOR CARE, кролик</p>
+                <p class="quick-order-row__price">5 900 ₽</p>
+                <p class="quick-order-row__stock">31</p>
+                <div class="qty-stepper">
+                  <button type="button" class="qty-stepper__btn">–</button>
+                  <span class="qty-stepper__value">1</span>
+                  <button type="button" class="qty-stepper__btn">+</button>
+                </div>
+                <p class="quick-order-row__total">5 900 ₽</p>
+              </div>
+            </li>
+            <li class="quick-order-row">
+              <input type="checkbox" class="quick-order-row__checkbox">
+              <div class="quick-order-row__cells">
+                <span class="quick-order-row__sku">
+                  123568980
+                  <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                </span>
+                <span class="quick-order-row__img img-placeholder"></span>
+                <p class="quick-order-row__name">STERILIZED, лосось</p>
+                <p class="quick-order-row__price">6 500 ₽</p>
+                <p class="quick-order-row__stock">65</p>
+                <div class="qty-stepper">
+                  <button type="button" class="qty-stepper__btn">–</button>
+                  <span class="qty-stepper__value">1</span>
+                  <button type="button" class="qty-stepper__btn">+</button>
+                </div>
+                <p class="quick-order-row__total">6 500 ₽</p>
+              </div>
+            </li>
+            <li class="quick-order-row">
+              <input type="checkbox" class="quick-order-row__checkbox">
+              <div class="quick-order-row__cells">
+                <span class="quick-order-row__sku">
+                  123568981
+                  <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                </span>
+                <span class="quick-order-row__img img-placeholder"></span>
+                <p class="quick-order-row__name">SENSITIVE, утка</p>
+                <p class="quick-order-row__price">5 100 ₽</p>
+                <p class="quick-order-row__stock">120</p>
+                <div class="qty-stepper">
+                  <button type="button" class="qty-stepper__btn">–</button>
+                  <span class="qty-stepper__value">1</span>
+                  <button type="button" class="qty-stepper__btn">+</button>
+                </div>
+                <p class="quick-order-row__total">5 100 ₽</p>
+              </div>
+            </li>
+            <li class="quick-order-row">
+              <input type="checkbox" class="quick-order-row__checkbox">
+              <div class="quick-order-row__cells">
+                <span class="quick-order-row__sku">
+                  123568982
+                  <svg><use href="img/sprite.svg#icon" xlink:href="img/sprite.svg#icon"></use></svg>
+                </span>
+                <span class="quick-order-row__img img-placeholder"></span>
+                <p class="quick-order-row__name">KITTEN MIX, курица</p>
+                <p class="quick-order-row__price">4 600 ₽</p>
+                <p class="quick-order-row__stock">89</p>
+                <div class="qty-stepper">
+                  <button type="button" class="qty-stepper__btn">–</button>
+                  <span class="qty-stepper__value">1</span>
+                  <button type="button" class="qty-stepper__btn">+</button>
+                </div>
+                <p class="quick-order-row__total">4 600 ₽</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
