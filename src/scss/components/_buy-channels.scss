@@ -66,8 +66,12 @@
   margin: 0;
   font-family: var(--font-family);
   font-size: fluid(15);
-  line-height: 1.13;
+  line-height: 1.45;
   color: #7f8fa2;
+}
+
+.legal-info__text + .legal-info__text {
+  margin-top: fluid(12);
 }
 
 .legal-info__brand {

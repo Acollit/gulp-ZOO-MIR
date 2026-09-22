@@ -7,6 +7,22 @@
   &--image {
     background-color: var(--color-navy-brand);
   }
+
+  &--light {
+    background-color: var(--color-bg-section);
+
+    .page-banner__title {
+      color: var(--color-navy);
+    }
+
+    .page-banner__desc {
+      color: var(--color-text);
+    }
+
+    .breadcrumb {
+      color: var(--color-text-muted);
+    }
+  }
 }
 
 .page-banner__bg {

@@ -2,3 +2,8 @@
 /app
 /bin
 package-lock.json
+_tmp_add_guest.py
+.gitignore
+_tmp_prices.py
+_tmp_offers.py
+_tmp_guest_cart.py

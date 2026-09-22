@@ -55,6 +55,14 @@
   gap: fluid(20);
 }
 
+.catalog-filters__row--toolbar {
+  display: flex;
+
+  @include tablet {
+    flex-direction: column;
+  }
+}
+
 .catalog-filters__dropdowns {
   display: flex;
   flex-wrap: wrap;
@@ -106,5 +114,52 @@
   strong {
     font-weight: 700;
     color: var(--color-navy);
+  }
+}
+
+.catalog-filters__option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 26px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 18px;
+    height: 18px;
+    margin-top: -9px;
+    border: 1.5px solid var(--color-navy);
+    border-radius: 4px;
+    background-color: var(--color-white);
+    box-sizing: border-box;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    width: 5px;
+    height: 9px;
+    margin-top: -6px;
+    border: solid var(--color-white);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+
+  &:has(:checked)::before {
+    background-color: var(--color-navy);
+    border-color: var(--color-navy);
+  }
+
+  &:has(:checked)::after {
+    opacity: 1;
   }
 }

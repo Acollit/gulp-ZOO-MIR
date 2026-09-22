@@ -1,0 +1,30 @@
+.legal-page {
+  padding: fluid(60) 0 fluid(90);
+}
+
+.legal-page__inner {
+  margin: 0 auto;
+  max-width: fluid(800);
+}
+
+.legal-page__title {
+  margin: fluid(40) 0 0;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: fluid(24);
+  line-height: 1.2;
+  color: var(--color-navy);
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.legal-page__text {
+  margin: fluid(16) 0 0;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: fluid(16);
+  line-height: 1.5;
+  color: rgba(30 58 92 / 71%);
+}
