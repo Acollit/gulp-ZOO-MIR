@@ -1,6 +1,7 @@
 /node_modules
 /app
 /bin
+/career-ops
 package-lock.json
 _tmp_add_guest.py
 .gitignore
